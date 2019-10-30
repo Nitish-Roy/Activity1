@@ -1,4 +1,4 @@
-/* Linked list implementation using c */
+
 #include<stdio.h>
 #include<stdlib.h>
 struct node
@@ -58,7 +58,7 @@ void append()
 	scanf("%d",&temp->data);
 	temp->link= NULL;
 	
-	if(root==NULL)  // List is empty
+	if(root==NULL)
 	{
 		root=temp;
 	}
@@ -159,8 +159,8 @@ void delete(void)
 			i++;
 		}
 		q=p->link;
-		p->link=q->link;   //Right connection first
-		q->link=NULL;     //Left connection
+		p->link=q->link;  
+		q->link=NULL; 
 		free(q);
 	}
 }
